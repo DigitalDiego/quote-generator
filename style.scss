@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  body {
+    width: 100%;
+    height: 100vh;
+    background: linen;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    h1 {
+      font-size: 2em;
+      margin-bottom: 1em;
+    }
+    .container {
+      width: 80%;
+      height: 320px;
+      border: 5px solid #343c28;
+      border-radius: 50px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 1em;
+      .top-row {
+        width: 100%;
+        height: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        .top {
+          width: 100%;
+          height: 80%;
+          display: grid;
+          place-items: center;
+          #quote {
+            font-weight: bold;
+            text-align: center;
+            font-size: 1.1em;
+          }
+        }
+        .bottom {
+          width: 100%;
+          height: 20%;
+          display: grid;
+          place-items: center;
+          #person {
+            text-align: center;
+            font-weight: bold;
+          }
+        }
+      }
+      .bottom-row {
+        width: 100%;
+        height: 20%;
+        display: grid;
+        place-items: center;
+        button {
+          padding: 0.5em 2em;
+          border: 2px solid #343c28;
+          background: #fff;
+          font-weight: bold;
+          border-radius: 20px;
+          cursor: pointer;
+          outline: none;
+          &:hover {
+            background: #343c28;
+            color: #fff;
+          }
+        }
+      }
+    }
+    @media only screen and (min-width: 800px) {
+      h1 {
+        font-size: 4em;
+        margin-bottom: 0.2em;
+      }
+      .container {
+        .top-row {
+          .top {
+            #quote {
+              font-size: 1.5em;
+            }
+          }
+        }
+        .bottom-row {
+          .bottom {
+            #person {
+              font-size: 1.2em;
+            }
+          }
+        }
+      }
+    }
+  }
+}

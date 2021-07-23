@@ -86,8 +86,26 @@
               font-size: 1.5em;
             }
           }
+          .bottom {
+            #person {
+              font-size: 1em;
+            }
+          }
         }
-        .bottom-row {
+      }
+    }
+    @media only screen and (min-width: 1800px) {
+      h1 {
+        font-size: 5em;
+      }
+      .container {
+        width: 80%;
+        .top-row {
+          .top {
+            #quote {
+              font-size: 1.9em;
+            }
+          }
           .bottom {
             #person {
               font-size: 1.2em;

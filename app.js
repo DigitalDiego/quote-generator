@@ -37,7 +37,7 @@ const quotes = [
     quote: "Aim for the moon. If you miss, you may hit a star.",
     person: "W. Clement Stone",
   },
-  { quote: "Quality is not an act, it is a habit.", person: "Aritotle" },
+  { quote: "Quality is not an act, it is a habit.", person: "Aristotle" },
 ];
 
 const generateQuote = () => {
